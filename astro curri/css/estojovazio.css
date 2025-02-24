@@ -1,0 +1,157 @@
+/* desktop responsividade */
+
+@media(max-width:1024px) and (min-windth: 720px) {
+
+    body {
+        background: var(--space-cadet-2);
+    }
+}
+/* tablet responsividade */
+@media (max-width:1024px) and (min-width:720px) {
+body{
+
+
+}
+    
+}
+
+:root {
+    /* CSS HEX */
+    --ultra-violet: #5E5094ff;
+    --pomp-and-power: #8F589Bff;
+    --space-cadet: #171632ff;
+    --celtic-blue: #416FBDff;
+    --space-cadet-2: #29234Cff;
+
+
+}
+
+@font-face {
+    font-family: 'Street Lord';
+
+    src: url('../fontes/kelmscott/KELMSCOT.TTF');
+}
+
+/* CSS HEX */
+
+body {
+    background: radial-gradient(var(--celtic-blue), var(--pomp-and-power));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('../imagens/image_fx_\ \(1\).jpg'); */
+    background-size: cover;
+}
+
+.central {
+    filter: drop-shadow(10px 10px 10px var(--space-cadet-2));
+    width: 520px;
+    background: var(--space-cadet);
+    filter: opacity(0.9);
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    
+    
+}
+
+h1 {
+    font-family: 'Street Lord';
+    text-transform: uppercase;
+    font-size: large;
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Street Lord';
+}
+hr {
+    width: 90%;
+    background: var(--celtic-blue);
+    height: 2px;
+
+}
+
+p {
+    font-style: oblique;
+    color: azure;
+}
+
+h3 {
+    font-family: 'Street Lord';
+    text-transform: uppercase;
+    font-size: large;
+    color: white;
+    padding: 10px;
+}
+
+.redesocial div {
+    width: 50%;
+    margin: auto;
+    gap: 20px;
+    padding: 15px;
+    
+}
+img {
+    border-radius: 50%;
+    width: 100px;
+    border: 5px solid var((var(--ultra-violet)));
+}
+.central .redesocial {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60px;
+    gap: 200%;
+    font-family: 'Street Lord';
+    text-transform: uppercase;
+}
+
+/* .redesocial .redesocialinsta {
+    filter: invert(100);
+    width: 30px;
+    font-family: 'Street Lord';
+    text-transform: uppercase;
+} */
+
+img.redesocialzap {
+    width: 50px;
+    filter: invert(100);
+}
+
+h4 {
+    color: white;
+}
+
+#instagram{
+width: 100px;
+flex-direction: column;
+
+}
+#zap{
+width: 10px;
+flex-direction: column;
+
+}
+
+
+#redesocialinsta {
+    width: 20px;
+    filter: invert(100);
+    display: flex;
+    gap: 10px;
+    
+}
+
+#redesocialzap {
+    width: 20px;
+    filter: invert(100);
+    display: flex;
+    gap: 10px;
+}
