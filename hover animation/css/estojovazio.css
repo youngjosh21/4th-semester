@@ -1,0 +1,145 @@
+@media (max-width:720px) {
+    body{
+        background: linear-gradient( var(--pomp-and-power) , var(--rebecca-purple));
+    }
+    
+}
+
+@media (max-width:1024px) and (min-width:720px) {
+    body{
+        background: linear-gradient( var(--pomp-and-power) , var(--russian-violet));
+    }
+    
+}
+@media (min-width:1024px) {
+    body{
+        background: linear-gradient( var(--indian-red) , var(--caramel));
+    }
+    
+}
+
+
+
+:root {
+
+    --caramel: #E08236ff;
+    --indian-red: #BA675Cff;
+    --dark-purple: #412336ff;
+    --ultra-violet: #775C98ff;
+    --black: #09060Eff;
+    --pomp-and-power: #A26099ff;
+    --rich-black: #080516ff;
+    --rebecca-purple: #5B3A8Cff;
+    --russian-violet: #3F204Cff;
+    --russian-violet-2: #472554ff;
+}
+
+* {
+
+color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+.card {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: var(--black);
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px var(--indian-red), var(--caramel);
+    transition: 0.7;
+}
+
+@font-face {
+    font-family: hiro;
+    src: url(../fontes/hiro_misake/HIROMISAKE.ttf);
+}
+
+@font-face {
+    font-family: freshman;
+    src: url(../fontes/freshman/Freshman.ttf);
+}
+
+h1 {
+    font-family: freshman;
+    color: var(--pomp-and-power)
+}
+
+p {
+    align-items: center;
+    justify-content: center;
+
+    font-family: hiro;
+    color: aliceblue;
+}
+
+.card:hover {
+    height: 450px;
+    width: 350px;
+    border-radius: 50px;
+}
+
+.card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    transition: 0.5s;
+}
+
+.card .img-box {
+
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+}
+
+.card .img-box img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 20px;
+
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+
+}
+
+.card .read-more{
+
+background: linear-gradient(var(--dark-purple), var(--pomp-and-power));
+padding: 12px;
+color:white;
+text-decoration: none;
+border-radius: 8px;
+font-family: hiro;
+
+}
